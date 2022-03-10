@@ -2,7 +2,7 @@ module.exports = {
   env: {
     BASE_URL: "http://localhost:3000",
     MONGODB_URL:
-      "mongodb+srv://mahedi:mahedi@cluster0.9in0q.mongodb.net/next-js_ecommerce?retryWrites=true&w=majority",
+      "MONGO-DB-SECRET-URL",
     ACCESS_TOKEN_SECRET: "YOUR_ACCESS_TOKEN_SECRET",
     REFRESH_TOKEN_SECRET: "YOUR_REFRESH_TOKEN_SECRET",
     PAYPAL_CLIENT_ID: "YOUR_PAYPAL_CLIENT_ID",
