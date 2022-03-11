@@ -1,4 +1,4 @@
-import auth from "../../../middleware/auth";
+//import auth from "../../../middleware/auth";
 import Products from "../../../models/productModel";
 import connectDB from "../../../utils/connectDB";
 
