@@ -5,7 +5,8 @@ import valid from "../../../utils/valid";
 
 connectDB();
 
-const registration = async (req, res) => {
+// eslint-disable-next-line import/no-anonymous-default-export
+export default async (req, res) => {
   switch (req.method) {
     case "POST":
       await register(req, res);
@@ -39,5 +40,3 @@ const register = async (req, res) => {
     return res.status(500).json({ err: err.message });
   }
 };
-
-export default registration;
