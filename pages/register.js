@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import valid from "../utils/valid";
 
 const Register = () => {
   const initialState = { name: "", email: "", password: "", cf_password: "" };
@@ -18,8 +19,11 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const errMsg = valid(name, email, password, cf_password);
+    if (errMsg) {
+      console.log(errMsg);
+    }
 
-    const res = await postData("auth/register", userData);
+    //const res = await postData("auth/register", userData);
   };
 
   return (

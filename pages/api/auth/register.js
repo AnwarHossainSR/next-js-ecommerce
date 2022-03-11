@@ -5,7 +5,7 @@ import valid from "../../../utils/valid";
 
 connectDB();
 
-export default registration = async (req, res) => {
+const registration = async (req, res) => {
   switch (req.method) {
     case "POST":
       await register(req, res);
@@ -39,3 +39,5 @@ const register = async (req, res) => {
     return res.status(500).json({ err: err.message });
   }
 };
+
+export default registration;
